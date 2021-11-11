@@ -1,27 +1,19 @@
 #include <iostream>
-#include <math.h>
-#include <string.h>
+#include <string>
 using namespace std;
 
-void runSieve(int upperBound) {
-  int upperBoundSquareRoot = (int)sqrt((double)upperBound);
-  bool *isComposite = new bool[upperBound + 1];
-  memset(isComposite, 0, sizeof(bool) * (upperBound + 1));
-  for (int m = 2; m <= upperBoundSquareRoot; m++) {
-    if (!isComposite[m]) {
-      cout << m << " ";
-      for (int k = m * m; k <= upperBound; k += m)
-        isComposite[k] = true;
-    }
-  }
-  for (int m = upperBoundSquareRoot; m <= upperBound; m++)
-    if (!isComposite[m])
-      cout << m << " ";
-  delete [] isComposite;
+int main() 
+{
+  string characterName = "John";
+  int characterAge = 35;
+  cout << "There once was a man named " << characterName << "." << endl;
+  cout << "he was " << characterAge << " years old." << endl;
+  cout << "he liked the name "<< characterName << "." << endl;
+  cout << "but did not like being " << characterAge << "." << endl;
+
+
+
+  return 0;
 }
 
-int main() {
-  cout << "Primes under 100: ";
-  runSieve(100);
-  cout << "\n";
-}
+
