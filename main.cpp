@@ -1,11 +1,14 @@
 #include <iostream>
+#include <cmath>
+
 using namespace std;
 
 int main() 
 {
-string phrase = "Giraffe Academy";
-string phrasesub;
-phrasesub = phrase.substr(8, 3);
-cout << phrasesub;   
+  string name;
+  cout << "Enter your name ";
+  getline(cin, name);
+  cout << "Hello  " << name << "!";
+
+  return 0;
 }
-//fucking anal men//
