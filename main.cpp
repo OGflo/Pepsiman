@@ -5,10 +5,16 @@ using namespace std;
 
 int main() 
 {
-  string name;
-  cout << "Enter your name ";
-  getline(cin, name);
-  cout << "Hello  " << name << "!";
+
+  double num1, num2;
+  cout << "Enter first number: ";
+  cin >> num1;
+
+  cout << "Enter second number: ";
+  cin >> num2;
+
+  cout << num1 + num2;
+
 
   return 0;
 }
