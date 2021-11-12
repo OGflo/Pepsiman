@@ -1,19 +1,20 @@
 #include <iostream>
 using namespace std;
 
+int main(){
 
-int power(int baseNum, int powNum){
-  int result = 1;
-  for(int i = 0; i < powNum; i++){
-    result = result * baseNum;
+  int numberGrid[3][2] = {
+    {1, 2},
+    {3, 4},
+    {5, 6},    
+  };
+
+  for(int i = 0; i < 3; i++){
+    for(int j = 0; j < 2; j++){
+      cout << numberGrid[i][j];
+    }
+    cout << endl;
   }
-  return result;
-}
 
-int main()
-{
-  
-  cout << power(4, 2);
-  
   return 0;
 }
